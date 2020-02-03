@@ -3,7 +3,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 import os
 
-project_folder = os.path.expanduser('~/IPnotifier')
+project_folder = os.path.expanduser('~/IPchanges')
 load_dotenv(os.path.join(project_folder, '.env'))
 SECRET_KEY = os.getenv('DJANGO_SECRET')
 
