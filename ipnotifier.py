@@ -5,8 +5,8 @@ import os
 
 project_folder = os.path.expanduser('~/IPchanges')
 load_dotenv(os.path.join(project_folder, '.env'))
-SECRET_KEY = os.getenv('DJANGO_SECRET')
-
+SECRET_KEY = os.getenv('IFTTT_SECRET')
+print(SECRET_KEY)
 now = datetime.now()
 script_time = now.strftime("%d/%m/%Y %H:%M:%S")
 def webhook_ifttt(new_ip, old_ip, date_time):
